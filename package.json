@@ -1,0 +1,32 @@
+{
+  "name": "@marcg68/nondiacritic",
+  "version": "1.1.4",
+  "description": "Replace diacritic characters with non-diacritic equivalent(s)",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcg1968/node-nondiacritic.git"
+  },
+  "author": "Marc Greyling",
+  "license": "ISC",
+  "private": false,
+  "bugs": {
+    "url": "https://github.com/marcg1968/node-nondiacritic/issues"
+  },
+  "homepage": "https://github.com/marcg1968/node-nondiacritic#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist"
+  },
+  "keywords": [
+    "diacritics"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7"
+  }
+}
