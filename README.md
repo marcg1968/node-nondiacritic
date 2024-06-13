@@ -8,14 +8,18 @@
 const diac = require('@marcg68/nondiacritic')
 
 const str = 'Über ähnlich'
-const obj = diac.removeDiacritics(str)
-console.log(obj)
+
+console.log(diac.removeDiacritics(str))
+
+console.log(diac.removeDiacritics(str, { ucfirst: true }))
+
 ```
 
 outputs
 
 ```json
 { original: 'Über ähnlich', replaced: 'UEber aehnlich' }
+{ original: 'Über ähnlich', replaced: 'Ueber aehnlich' }
 ```
 
 ### ES6
