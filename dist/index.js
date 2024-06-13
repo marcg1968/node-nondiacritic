@@ -3,12 +3,11 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.removeDiacritics = removeDiacritics;
+exports.removeDiacritics = void 0;
 var _constants = require("./constants.js");
 // src/index.js
 
-// export const removeDiacritics = str => {
-function removeDiacritics(str) {
+var removeDiacritics = exports.removeDiacritics = function removeDiacritics(str) {
   if (typeof str !== 'string') return null;
   var newStr = str;
   var diacriticals = str.split('').filter(function (e) {
@@ -36,4 +35,4 @@ function removeDiacritics(str) {
     original: str,
     replaced: newStr
   };
-}
+};
